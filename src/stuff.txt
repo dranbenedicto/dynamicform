@@ -1,0 +1,16 @@
+external frameworks used:
+    - axios
+    - material ui 
+
+
+*constants*
+- firstname: text
+- lastname: text
+- email: email
+
+
+*occasional*
+- age: number
+- (some text field): text
+- gender: select
+- (some multiline): multiline
