@@ -2,10 +2,14 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { MenuItem } from '@mui/material'
+import {useState} from 'react'
 
 
 function InputDisplay({data, ChangeValue, isSubmitting}) {
     
+    // Value
+    const [dataValue, setDataValue] = useState(data.value)
+
     // Fixes the FieldNames
     const FixNames = (string) => {
         let word = string.replace(/([A-Z])/g, ' $1').trim();
@@ -17,6 +21,7 @@ function InputDisplay({data, ChangeValue, isSubmitting}) {
 
     // Calls ChangeValue on Parent Component
     const SetValue = (value) => {
+        setDataValue(value)
         ChangeValue(data.fieldName, value)
     }
 
@@ -48,7 +53,7 @@ function InputDisplay({data, ChangeValue, isSubmitting}) {
                             id="select-input"
                             select
                             label={FixNames(data.fieldName)}
-                            value={data.value}
+                            value={dataValue}
                             fullWidth
                             onChange={e => SetValue(e.target.value)}
                             disabled={isSubmitting}
