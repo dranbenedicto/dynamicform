@@ -4,7 +4,7 @@ This project was made by Dran Benedicto for testing purposes. This project is no
 ## 🔧 Setup Guide
 Nothing special. Just clone the repo, use the .env (not the one on GitHub 😉), and just npm start it.
 
-# ❓ FAQs
+## ❓ FAQs
 Below are some frequently-asked-questions in regards of the production, and to the whole project itself.
 
 ## What framework did you use?
@@ -22,4 +22,3 @@ I used Axios and Material UI's.
 ## Rate the project based on its difficulty from 1-10 (10 being extremely difficult)
 It's probably around 5 or 6. I mean it's a pretty easy project. The only thing that complicates me (a bit) during production is its dynamic data from the API. 
 There's also that CORS policy error. I can't call the API in a quick and consecutive manner since CORS will temporarily block my app. LOL. So if I'm making some changes here and there, I have to wait for a few seconds (or even minutes) to test the app again. Quite annoying, but very understandable.
-
